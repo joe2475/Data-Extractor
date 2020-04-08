@@ -19,9 +19,8 @@ def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subT
 
 
 def fileMover(filename):
-    src = r'Project directory ' + filename + '/'
-    dest = src
-    count = 0;
+    src = # Source Path + filename + '/'
+    dest = #Destination Path
     dirCheckMove(src,dest, r'LAC_A/', filename)
     dirCheckMove(src,dest, r'LAC_I/', filename)
     dirCheckMove(src,dest, r'LAC_S/', filename)
