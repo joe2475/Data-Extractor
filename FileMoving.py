@@ -15,7 +15,7 @@ def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subT
                 count = count + 1
                 os.rename(src + f, src + fixFile + '_' + str(count) + '.pdf')
             shutil.move(src + dirname + f, dest + dirname)
-          shutil.rmtree(os.path.join(src, dirname))
+          
 
 
 def fileMover(filename):
