@@ -7,7 +7,7 @@ from os import path
 def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subTwo = ''):
     count = 0
     dirCheck = os.path.isdir(src + dirname)
-    if (isdir01_ACCTG01 == True):
+    if (dirCheck == True):
         files = os.listdir(src + dirname)
         for f in files:
             if path.exists(src + f):
