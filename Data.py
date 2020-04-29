@@ -7,6 +7,7 @@ import subprocess
 from pdfrw import PdfReader, PdfWriter
 import FileMoving
 import JsonData
+sourcce = r'Source Directory'
 
 def get_hash(filename):  # Gets hash from the json file. Used for decrypting ZIP Files.
     with open(filename) as g:
@@ -16,8 +17,8 @@ def get_hash(filename):  # Gets hash from the json file. Used for decrypting ZIP
 
 
 def pdfMetaDataAdd(filename, title, author, date ,keywords, jsonFile): # Adds desired metadata to the pdf file.
-    os.chdir(r'Directory of json files '  + jsonFile)
-    src = r'source directory '  + jsonFile+ '/'
+    os.chdir(source + ' '   + jsonFile)
+    src = source  + jsonFile+ '/'
     dest = r'Destination directory'
     trailer = PdfReader(filename+'.pdf')
     date = date.replace("/", '-')
@@ -48,7 +49,7 @@ def exctract_zip(fileN, passW): # Decypts and unzips the files.
 
 if __name__ == "__main__":
     password = ""
-    directory = os.fsencode(r'Main working directory for the project')
+    directory = os.fsencode(source)
     for file in os.listdir(directory):
         os.chdir(directory)
         filename = os.fsdecode(file)
