@@ -5,7 +5,7 @@ from os import path
 # For the project at hand the folders had four subfolders, thus the 'LAC_A', 'MET_A', ect..
 
 def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subTwo = ''):
-    count = 0
+    count = 0 # Used in case there is a duplicate file name. 
     dirCheck = os.path.isdir(src + dirname)
     if (dirCheck == True):
         files = os.listdir(src + dirname)
