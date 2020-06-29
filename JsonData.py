@@ -13,9 +13,3 @@ def json_write(filename): # Writes data from JSON file into the pdfMetaDataAdd f
             index_details["Keywords"] = doc["Description"]
             index_details["Author"] = doc["Cabinet"]
             Data.pdfMetaDataAdd(index_details['Id'], index_details['Reference Number'], index_details["Author"], index_details["Date Created"] ,index_details['Keywords'], jsonName)
-
-
-
-
-if __name__ == '__main__':
-    json_write('Test json file')
