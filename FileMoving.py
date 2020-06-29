@@ -21,11 +21,11 @@ def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subT
 def fileMover(filename):
     src = # Source Path + filename + '/'
     dest = #Destination Path
-    dirCheckMove(src,dest, r'LAC_A/', filename)
-    dirCheckMove(src,dest, r'LAC_I/', filename)
-    dirCheckMove(src,dest, r'LAC_S/', filename)
-    dirCheckMove(src,dest, r'MET_A/', filename)
-    dirCheckMove(src,dest, r'MET_I/', filename)
-    dirCheckMove(src,dest, r'MET_S/', filename)
+    dirCheckMove(src,dest, r'.../', filename)  #The ... represents the subfolder needed to be passed in. 
+    dirCheckMove(src,dest, r'.../', filename)
+    dirCheckMove(src,dest, r'.../', filename)
+    dirCheckMove(src,dest, r'.../', filename)
+    dirCheckMove(src,dest, r'.../', filename)
+    dirCheckMove(src,dest, r'.../', filename)
     
     
