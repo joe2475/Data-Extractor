@@ -21,7 +21,7 @@ def pdfMetaDataAdd(filename, title, author, date ,keywords, jsonFile): # Adds de
     src = source  + jsonFile+ '/'
     dest = r'Destination directory'
     trailer = PdfReader(filename+'.pdf')
-    date = date.replace("/", '-')
+    date = date.replace("/", '-') # Used to format the date into one we can use. This is optional. 
     date = date.replace(":", "_")
     trailer.Info.Title = title
     trailer.Info.Author = author
