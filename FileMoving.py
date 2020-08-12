@@ -2,7 +2,7 @@ import shutil
 import os
 from os import path
 # This module is used to move files around for extraction. Obviously the folder names will be different, and you may not even need to use this section.
-# For the project at hand the folders had four subfolders, thus the 'LAC_A', 'MET_A', ect..
+# For the project at hand the folders had four subfolders.
 
 def dirCheckMove(src,dest,dirname,filename, subfolder = False, subOne = '', subTwo = ''):
     count = 0 # Used in case there is a duplicate file name. 
